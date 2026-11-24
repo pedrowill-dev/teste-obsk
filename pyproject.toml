@@ -1,0 +1,22 @@
+[project]
+name = "etl-vendas"
+version = "1.0.0"
+description = "Sales ETL: extract orders from a CSV export, clean and validate them, load a warehouse (obskitpy example)"
+requires-python = ">=3.10"
+dependencies = ["obskitpy>=0.12"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["etl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 160

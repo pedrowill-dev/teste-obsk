@@ -1,0 +1,16 @@
+{
+  "name": "ETL Vendas",
+  "key": "ETL_VENDAS",
+  "team": "Dados",
+  "owner": "Pedro",
+  "category": "ETL",
+  "business_system": "Vendas",
+  "language": "python",
+  "entrypoint": "main.py",
+  "service_name": "etl-vendas",
+  "max_concurrency": 1,
+  "timeout_seconds": 300,
+  "retry_max": 1,
+  "retry_backoff_seconds": 5,
+  "config": {"ETL_ROW_LIMIT": "0"}
+}
